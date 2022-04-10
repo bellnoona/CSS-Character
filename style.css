@@ -1,0 +1,187 @@
+/* Global */
+
+:root {
+  --apeach-body-white: #fff;
+  --apeach-body-gray: #bcbcbc;
+  --apeach-head-pink: #ecc1c6;
+  --apeach-dark-pink: #dba6ae;
+  --apeach-eye: #5f474b;
+  --apeach-cheek: #e2727c;
+  --apeach-mouth-in: #8d3538;
+  --apeach-mouth-border: #712228;
+  --cherry-blossom: #f4d9d8;
+  --cherry-blossom-border: #e3b6bb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.apeach {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: auto;
+  position: relative;
+}
+
+.head {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 5px solid var(--apeach-dark-pink);
+  transform: rotate(-40deg) skewX(9deg);
+  border-radius: 150px 20px 150px 180px;
+  background-color: var(--apeach-head-pink);
+}
+
+.eye-wrapper {
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  /* top: 43%; */
+  /* position: absolute;
+  top: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 39%;
+  /* width: 100%; */
+}
+
+.eye {
+  /* align-items: center; */
+  background-color: var(--apeach-eye);
+  border-radius: 12%;
+  /* display: flex; */
+  /* justify-content: center; */
+  width: 56px;
+  height: 40px;
+  /* overflow: hidden; */
+  margin: 0 32px;
+  /* transform: rotate(10deg); */
+}
+
+/* 눈 모양 좀더 반달모양처럼 위아래 곡선효과 주기 */
+
+/* .eye .additional {
+  background-color: var(--apeach-eye);
+  width: 58px;
+  height: 6px;
+  position: absolute;
+  bottom: 0;
+  border: 1px solid red;
+} */
+
+.eye.left {
+}
+
+.eye.right {
+  /* position: absolute; */
+  /* top: 41%; */
+}
+
+.eye.left > .twinkle-large {
+  background-color: var(--apeach-body-white);
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 6px;
+  left: 39px;
+  border-radius: 38%;
+  filter: blur(1px);
+}
+
+.eye.left > .twinkle-small {
+  background-color: var(--apeach-body-white);
+  width: 13px;
+  height: 9px;
+  position: absolute;
+  bottom: 4px;
+  left: 66px;
+  border-radius: 35%;
+  filter: blur(1px);
+}
+
+.eye.right > .twinkle-small {
+  background-color: var(--apeach-body-white);
+  width: 13px;
+  height: 9px;
+  position: absolute;
+  bottom: 4px;
+  right: 41px;
+  border-radius: 35%;
+  filter: blur(1px);
+}
+
+.eye.right > .twinkle-large {
+  background-color: var(--apeach-body-white);
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 6px;
+  right: 55px;
+  border-radius: 38%;
+  filter: blur(1px);
+}
+
+.cheek-wrapper-left {
+  display: flex;
+  position: absolute;
+  top: 46%;
+  left: 40.5%;
+  filter: blur(1px);
+}
+
+.cheek-wrapper-left > .cheek {
+  z-index: 1;
+  background-color: var(--apeach-cheek);
+  width: 6px;
+  height: 21px;
+  margin: 0 7px;
+  transform: rotate(40deg);
+}
+
+.cheek-wrapper-right {
+  display: flex;
+  position: absolute;
+  top: 46%;
+  right: 40.5%;
+  filter: blur(1px);
+}
+
+.cheek-wrapper-right > .cheek {
+  z-index: 1;
+  background-color: var(--apeach-cheek);
+  width: 6px;
+  height: 21px;
+  margin: 0 7px;
+  transform: rotate(40deg);
+}
+
+.mouth {
+  position: absolute;
+  bottom: 238px;
+  background-color: var(--apeach-mouth-in);
+  width: 150px;
+  height: 70px;
+  border: 4px solid var(--apeach-mouth-border);
+  border-radius: 30px 30px 82px 82px;
+}
+
+.teeth {
+  position: absolute;
+  bottom: 43px;
+  right: 55px;
+  width: 35px;
+  height: 18px;
+  border-radius: 0 0 12px 12px;
+  background-color: var(--apeach-body-white);
+}
