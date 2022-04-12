@@ -201,7 +201,8 @@ body {
   border-radius: 150px 20px 150px 180px;
   background-color: var(--apeach-head-pink);
   animation: head-bounce 1s infinite alternate;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); */
 }
 
 .eye-wrapper {
