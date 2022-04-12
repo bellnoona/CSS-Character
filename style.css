@@ -1,6 +1,142 @@
-/* Global */
+/* animatiln */
 
+/* 머리 animation */
+@keyframes head-bounce {
+  from {
+    transform: rotate(-40deg) skewX(9deg);
+  }
+  to {
+    transform: rotate(-40deg) skewX(9deg) skewY(2.8deg);
+  }
+}
+
+/* 눈 animation */
+@keyframes large-eye-left {
+  from {
+    width: 20px;
+    height: 16px;
+    top: 6px;
+    left: 2.75em;
+  }
+  to {
+    width: 13px;
+    height: 9px;
+    top: 6px;
+    left: 2.75em;
+  }
+}
+@keyframes small-eye-left {
+  from {
+    width: 13px;
+    height: 9px;
+    bottom: 4px;
+    left: 4.1em;
+  }
+  to {
+    width: 20px;
+    height: 16px;
+    bottom: 4px;
+    left: 4.1em;
+  }
+}
+
+@keyframes large-eye-right {
+  from {
+    width: 20px;
+    height: 16px;
+    top: 6px;
+    right: 3.7em;
+  }
+  to {
+    width: 13px;
+    height: 9px;
+    top: 6px;
+    right: 3.7em;
+  }
+}
+@keyframes small-eye-right {
+  from {
+    width: 13px;
+    height: 9px;
+    bottom: 4px;
+    right: 2.7em;
+  }
+  to {
+    width: 20px;
+    height: 16px;
+    bottom: 4px;
+    right: 2.7em;
+  }
+}
+
+/* 입 animation */
+@keyframes small-mouth {
+  from {
+    border-radius: 30px 30px 82px 82px;
+    width: 60px;
+    height: 33px;
+    bottom: 17.5em;
+  }
+  to {
+    border-radius: 50px 50px 86px 86px;
+    width: 135px;
+    height: 62px;
+    bottom: 15.5em;
+  }
+}
+
+@keyframes big-mouth {
+  from {
+    border-radius: 50px 50px 86px 86px;
+    width: 135px;
+    height: 62px;
+    bottom: 15.5em;
+  }
+  to {
+    border-radius: 30px 30px 82px 82px;
+    width: 60px;
+    height: 33px;
+    bottom: 17.5em;
+  }
+}
+
+@keyframes small-teeth {
+  from {
+    border-radius: 0 0 9px 9px;
+    width: 18px;
+    height: 8px;
+    bottom: 1em;
+    right: 16px;
+  }
+  to {
+    border-radius: 0 0 13px 13px;
+    width: 35px;
+    height: 16px;
+    bottom: 2.22em;
+    right: 43px;
+  }
+}
+
+@keyframes big-teeth {
+  from {
+    border-radius: 0 0 13px 13px;
+    width: 35px;
+    height: 16px;
+    bottom: 2.22em;
+    right: 43px;
+  }
+  to {
+    border-radius: 0 0 9px 9px;
+    width: 18px;
+    height: 8px;
+    bottom: 1em;
+    right: 16px;
+  }
+}
+
+/* Global */
 :root {
+  /* color */
   --apeach-body-white: #fff;
   --apeach-body-gray: #bcbcbc;
   --apeach-head-pink: #ecc1c6;
@@ -11,6 +147,9 @@
   --apeach-mouth-border: #712228;
   --cherry-blossom: #f4d9d8;
   --cherry-blossom-border: #e3b6bb;
+
+  /* animation */
+  --eye-duration: 0.25s;
 }
 
 * {
@@ -47,6 +186,7 @@ body {
   transform: rotate(-40deg) skewX(9deg);
   border-radius: 150px 20px 150px 180px;
   background-color: var(--apeach-head-pink);
+  animation: head-bounce 1s infinite alternate;
 }
 
 .eye-wrapper {
@@ -57,13 +197,49 @@ body {
   top: 39%;
 }
 
+.eye.left:before {
+  content: '';
+  width: 3em;
+  border: 3.6px solid var(--apeach-eye);
+  position: absolute;
+  top: -1.4px;
+  left: 2.1em;
+  border-radius: 100% 100% 30% 30%;
+}
+.eye.left:after {
+  content: '';
+  width: 3em;
+  border: 3.6px solid var(--apeach-eye);
+  position: absolute;
+  top: 34px;
+  left: 2.1em;
+  border-radius: 100% 100% 30% 30%;
+}
+
+.eye.right:before {
+  content: '';
+  width: 3em;
+  border: 3.6px solid var(--apeach-eye);
+  position: absolute;
+  top: -1.4px;
+  right: 2.1em;
+  border-radius: 100% 100% 30% 30%;
+}
+.eye.right:after {
+  content: '';
+  width: 3em;
+  border: 3.6px solid var(--apeach-eye);
+  position: absolute;
+  top: 34px;
+  right: 2.1em;
+  border-radius: 100% 100% 30% 30%;
+}
+
 .eye {
   background-color: var(--apeach-eye);
-  border-radius: 12%;
-  /* width: 56px; */
+  border-radius: 32%;
   width: 3.6em;
   height: 40px;
-  /* margin: 0 32px; */
   margin: 0 2em;
 }
 
@@ -77,57 +253,56 @@ body {
   bottom: 0;
 } */
 
-/* .eye.left {
-}
-
-.eye.right {
-} */
-
 .eye.left > .twinkle-large {
   background-color: var(--apeach-body-white);
-  width: 22px;
-  height: 18px;
   position: absolute;
+  width: 20px;
+  height: 16px;
   top: 6px;
-  /* left: 41px; */
   left: 2.75em;
-  border-radius: 38%;
-  filter: blur(0.8px);
+  border-radius: 45%;
+  filter: blur(0.7px);
+  animation: large-eye-left var(--eye-duration) infinite alternate;
+  animation-timing-function: ease;
 }
 
 .eye.right > .twinkle-large {
   background-color: var(--apeach-body-white);
-  width: 22px;
-  height: 18px;
   position: absolute;
+  width: 20px;
+  height: 16px;
   top: 6px;
-  right: 3.45em;
-  border-radius: 38%;
-  filter: blur(0.8px);
+  right: 3.7em;
+  border-radius: 45%;
+  filter: blur(0.7px);
+  animation: large-eye-right var(--eye-duration) infinite alternate;
+  animation-timing-function: ease;
 }
 
 .eye.left > .twinkle-small {
   background-color: var(--apeach-body-white);
+  position: absolute;
   width: 13px;
   height: 9px;
-  position: absolute;
   bottom: 4px;
-  /* left: 66px; */
   left: 4.1em;
-  border-radius: 35%;
-  filter: blur(0.8px);
+  border-radius: 45%;
+  filter: blur(0.7px);
+  animation: small-eye-left var(--eye-duration) infinite alternate;
+  animation-timing-function: ease;
 }
 
 .eye.right > .twinkle-small {
   background-color: var(--apeach-body-white);
+  position: absolute;
   width: 13px;
   height: 9px;
-  position: absolute;
   bottom: 4px;
-  /* right: 41px; */
   right: 2.7em;
-  border-radius: 35%;
-  filter: blur(0.8px);
+  border-radius: 45%;
+  filter: blur(0.7px);
+  animation: small-eye-right var(--eye-duration) infinite alternate;
+  animation-timing-function: ease;
 }
 
 .cheek-wrapper-left {
@@ -135,6 +310,7 @@ body {
   position: absolute;
   top: 47%;
   left: 9.8em;
+  filter: blur(1px);
 }
 
 .cheek-wrapper-left > .cheek {
@@ -163,25 +339,54 @@ body {
   transform: rotate(40deg);
 }
 
+/* 입 크게 벌렸을 때 */
 .mouth {
   position: absolute;
-  /* bottom: 238px; */
-  bottom: 14.8em;
   background-color: var(--apeach-mouth-in);
-  width: 150px;
-  height: 70px;
   border: 4px solid var(--apeach-mouth-border);
-  border-radius: 30px 30px 82px 82px;
+  border-radius: 50px 50px 86px 86px;
+  width: 135px;
+  height: 62px;
+  bottom: 15.5em;
+  animation: big-mouth 1s infinite alternate;
+  animation-timing-function: ease-in-out;
 }
 
 .teeth {
   position: absolute;
-  bottom: 2.75em;
-  right: 55px;
-  width: 35px;
-  height: 18px;
-  border-radius: 0 0 12px 12px;
   background-color: var(--apeach-body-white);
+  border-radius: 0 0 13px 13px;
+  width: 35px;
+  height: 16px;
+  bottom: 2.22em;
+  right: 43px;
+  animation: big-teeth 1s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+/* 입 작게 벌렸을 때 */
+.mouth {
+  position: absolute;
+  background-color: var(--apeach-mouth-in);
+  border: 4px solid var(--apeach-mouth-border);
+  border-radius: 30px 30px 82px 82px;
+  width: 60px;
+  height: 33px;
+  bottom: 17.5em;
+  animation: small-mouth 1s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.teeth {
+  position: absolute;
+  background-color: var(--apeach-body-white);
+  border-radius: 0 0 9px 9px;
+  width: 18px;
+  height: 8px;
+  bottom: 1em;
+  right: 16px;
+  animation: small-teeth 1s infinite alternate;
+  animation-timing-function: ease-in-out;
 }
 
 .body {
