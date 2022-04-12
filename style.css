@@ -161,6 +161,12 @@ body {
   padding: 0;
 }
 
+.container {
+  width: 1200px;
+  height: 1200px;
+  margin: 0 auto;
+}
+
 .apeach {
   display: flex;
   align-items: center;
@@ -168,15 +174,23 @@ body {
   height: 600px;
   width: 600px;
   position: relative;
+  margin: 200px auto;
+}
+
+/* .apeach-shadow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 900px;
+  position: relative;
   margin: 0 auto;
 }
-.apeach:after {
-  content: ' ';
-  /* opacity: 0.5; */
-  position: relative;
-  left: -100px;
-  transform: scale(2, 2.5);
-}
+
+.apeach-shadow {
+  opacity: 0.5;
+  transform: scale(1.2, 1.4) translate(-50px, -100%);
+} */
 
 .head {
   position: absolute;
@@ -187,6 +201,7 @@ body {
   border-radius: 150px 20px 150px 180px;
   background-color: var(--apeach-head-pink);
   animation: head-bounce 1s infinite alternate;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .eye-wrapper {
@@ -242,16 +257,6 @@ body {
   height: 40px;
   margin: 0 2em;
 }
-
-/* 눈 모양 좀더 반달모양처럼 위아래 곡선효과 주기 */
-
-/* .eye .additional {
-  background-color: var(--apeach-eye);
-  width: 58px;
-  height: 6px;
-  position: absolute;
-  bottom: 0;
-} */
 
 .eye.left > .twinkle-large {
   background-color: var(--apeach-body-white);
@@ -413,10 +418,12 @@ body {
 
 .leg.left {
   left: 15.2em;
+  box-shadow: 2px 2px 0 1px rgba(0, 0, 0, 0.2);
 }
 .leg.right {
   right: 15.2em;
   z-index: 1;
+  box-shadow: 2px 2px 0 1px rgba(0, 0, 0, 0.2);
 }
 
 .leg.left:before {
@@ -445,10 +452,12 @@ body {
   left: 13.3em;
   transform: rotate(8deg);
   border-radius: 70% 0 16% 50%;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 .arm.right {
   right: 13.3em;
   transform: scaleX(-1) rotate(8deg);
   border-radius: 70% 0 16% 50%;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
 }
