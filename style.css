@@ -361,7 +361,7 @@ body {
   height: 37.5em;
   margin: 12.5em auto;
   position: absolute;
-  left: 36%;
+  left: 40%;
   z-index: 1;
 }
 /* apeach-shadow */
@@ -372,7 +372,7 @@ body {
   width: 52.5em;
   height: 52.5em;
   position: absolute; /* 다시 보긔 */
-  left: 21%;
+  left: 25%;
   bottom: 5.4%;
   margin: 15em auto;
   opacity: 0.5;
@@ -442,6 +442,7 @@ body {
   top: 2.125em;
   left: 2.1em;
   border-radius: 100% 100% 30% 30%;
+  background-color: var(--apeach-eye);
 }
 .apeach-shadow .eye.left:after {
   content: '';
@@ -483,6 +484,7 @@ body {
   top: 2.125em;
   right: 2.1em;
   border-radius: 100% 100% 30% 30%;
+  background-color: var(--apeach-eye);
 }
 .apeach-shadow .eye.right:after {
   content: '';
