@@ -9,7 +9,7 @@
 - `HTML`, `CSS`만으로 구현하였습니다.
 - 해당 페이지에서 배포된 완성본 캐릭터를 볼 수 있습니다. ▶️ <https://bellnoona.github.io/CSS-Character/>   
 
-▶️▶️▶️ 최종 결과물   
+▶️▶️▶️ **최종 결과물**   
 
 ![apeach_character](https://user-images.githubusercontent.com/76866502/163433596-85b839b5-4c6d-4adc-acab-bbd1b17d5fcc.gif)
 
@@ -42,7 +42,7 @@
  
  <br>
  
-  ▶️▶️▶️ 추후 수정계획   
+  ▶️▶️▶️ **추후 수정계획**   
  
  1. JavaScript를 이용해서 단순 반복작업으로 작업하던 많은 양의 코드를 짧게 줄일 수 있도록 하겠습니다. (ex. 속마음 어피치를 복사하기 위해 값을 곱했는데 js 메서드를 사용한다.)   
   or    
