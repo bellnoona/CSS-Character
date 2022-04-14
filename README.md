@@ -14,9 +14,9 @@
 ### 2.1 어피치 머리 모양   
   - 생각보다 어피치 머리 모양을 어떻게 구현해야할지 생각해내는 것이 간단하지 않았습니다.   
   먼저 원을 `transform: skewX(9deg)`를 통해서 마름모 모양으로 변형시킵니다. 그리고나서, `transform: rotate(-40deg)`로 회전 시킵니다.   
-  그후, `border-radius`를 통해 둥근 형태를 잡아주어 최종적인 어피치 머리 형태를 만들어주었습니다.     
+  그 후, `border-radius`를 통해 둥근 형태를 잡아주어 최종적인 어피치 머리 형태를 만들어주었습니다.     
   
-    ( ▶️참고 <https://medium.com/@punkyoon/css%EB%A1%9C-%EC%96%B4%ED%94%BC%EC%B9%98-%EA%B7%B8%EB%A6%AC%EA%B8%B0-6ab8da301a4f> )   
+    ( ▶️ 참고 <https://medium.com/@punkyoon/css%EB%A1%9C-%EC%96%B4%ED%94%BC%EC%B9%98-%EA%B7%B8%EB%A6%AC%EA%B8%B0-6ab8da301a4f> )   
     
     ![image](https://user-images.githubusercontent.com/76866502/163362395-cb4c055e-bf1f-4e70-99c2-b018cef49f76.png)
 
@@ -24,7 +24,7 @@
 - 눈(eye 클래스)안에 큰 눈동자(twinkle-large 클래스)와 작은 눈동자(twinkle-small)을 두고,    
 `@keyframes`를 통해 눈동자가 커졌다 작아졌다를 반복하는 애니메이션 효과를 주었습니다.   
 
-  ![apeach_eyes](https://user-images.githubusercontent.com/76866502/163363275-54adfb8c-0e7a-4bcf-8bf1-d771c0e4a06c.gif).  
+  ![apeach_eyes](https://user-images.githubusercontent.com/76866502/163363275-54adfb8c-0e7a-4bcf-8bf1-d771c0e4a06c.gif)   
   
 <br>
 
