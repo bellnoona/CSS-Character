@@ -7,7 +7,11 @@
 - 🌸벚꽃놀이에 간 어피치🍑의 두근거리는 속마음과 다소 차분한 겉모습을 표현한 캐릭터입니다. 주변에 흩날리는 벚꽃 바람도 포인트입니다.   
 - 평소에 귀엽다고 생각한 이모티콘이었는데 제 방식대로 바꿔보고자 선택하게 되었습니다. 기존 이모티콘과는 다르게 제 스타일대로 어피치의 겉모습/속마음을 표현하여 캐릭터로 나타내보았습니다.
 - `HTML`, `CSS`만으로 구현하였습니다.
-- 해당 페이지에서 배포된 완성본 캐릭터를 볼 수 있습니다. ▶️ <https://bellnoona.github.io/CSS-Character/>
+- 해당 페이지에서 배포된 완성본 캐릭터를 볼 수 있습니다. ▶️ <https://bellnoona.github.io/CSS-Character/>   
+
+▶️▶️▶️ 최종 결과물   
+
+![apeach_character](https://user-images.githubusercontent.com/76866502/163433596-85b839b5-4c6d-4adc-acab-bbd1b17d5fcc.gif)
 
 <br>
 
