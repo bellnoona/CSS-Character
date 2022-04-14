@@ -346,7 +346,7 @@ body {
 /* container */
 .container {
   position: relative;
-  width: auto;
+  width: 75em;
   height: 70em;
   margin: 0 auto;
   /* display: flex; */
