@@ -26,7 +26,7 @@
     ![image](https://user-images.githubusercontent.com/76866502/163362395-cb4c055e-bf1f-4e70-99c2-b018cef49f76.png)
 
 ### 2.2 눈동자 애니메이션   
-- 눈(eye 클래스)안에 큰 눈동자(twinkle-large 클래스)와 작은 눈동자(twinkle-small 클래스)을 두고,      
+- 눈(eye 클래스)안에 큰 눈동자(twinkle-large 클래스)와 작은 눈동자(twinkle-small 클래스)를 두고,      
 `@keyframes`를 통해 두 눈동자가 커졌다 작아졌다를 반복하면서 마치 눈이 초롱초롱 반짝이는듯한 애니메이션 효과를 주었습니다.   
 
   ![apeach_eyes](https://user-images.githubusercontent.com/76866502/163363275-54adfb8c-0e7a-4bcf-8bf1-d771c0e4a06c.gif)   
