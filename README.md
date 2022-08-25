@@ -31,7 +31,6 @@
 
   ![apeach_eyes](https://user-images.githubusercontent.com/76866502/163363275-54adfb8c-0e7a-4bcf-8bf1-d771c0e4a06c.gif)   
   
-<br>
 
 ### 2.3 벚꽃바람 애니메이션
 - `HTML`, `CSS` 이외에는 사용하지 않고 구현하기로 하였기에, 벚꽃이 흩날리는 것을 표현할 때 반복작업으로 벚꽃을 만들어주었습니다.   
